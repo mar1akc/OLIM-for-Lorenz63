@@ -8,7 +8,7 @@ C source codes
 
 (1) olim3D4Lorenz63.c, a C source code implementing the 3D ordered line integral method with the midpoint quadrature rule [5]. the vector field is the Lorenz vector field. No input is required. Output files:
 
-– LorenzQpot_rho<...>.txt contains a column of values of the quasipotential at 3D mesh points. Its name is assigned in line 1440.
+- LorenzQpot_rho<...>.txt contains a column of values of the quasipotential at 3D mesh points. Its name is assigned in line 1440.
 
 - parameters_rho<...>.txt contains a column vector with the following parameters:
 XMIN, XMAX, YMIN, YMAX, ZMIN, ZMAX, NX, NY, NZ,

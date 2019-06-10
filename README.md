@@ -20,7 +20,8 @@ gcc -Wall LinLorenz.c olim3D4Lorenz63.c -lm -O3
 
 The level sets of the computed quasipotential are visualized by the code olim3Dvisualize.m.
 
-(2) LinLorenz.c finds the quasipotential decomposition for linearized Lorenz’63 near the origin if 0 < ρ < 1 or near C+ = (􏰋sqrt(β(ρ−1)),􏰋sqrt(β(ρ−1)),ρ−1) if 1 < ρ < ρ2 ≈ 24.74. It also contains a number of linear algebra functions. It is an auxiliary file that does not contain function main. It implements an algorithm similar to Bartels-Stewart [1] but customized and simplified for finding linearized Lorenz’63. A description of the algorithm is found in [2].
+(2) LinLorenz.c finds the quasipotential decomposition for linearized Lorenz’63 near the origin if 0 < ρ < 1 or near 
+C_+ = (􏰋sqrt(β(ρ−1)),􏰋sqrt(β(ρ−1)),ρ−1) if 1 < ρ < ρ_2 ≈ 24.74. It also contains a number of linear algebra functions. It is an auxiliary file that does not contain function main. It implements an algorithm similar to Bartels-Stewart [1] but customized and simplified for finding linearized Lorenz’63. A description of the algorithm is found in [2].
 
 (3) findQmatrix.h is a header file for LinLorenz.c.
 
@@ -43,7 +44,7 @@ MyPolarPlot.m.
 
 – LorenzQpot_rho<...>.txt. The name is assigned in line 580.
 
-The output file MAP_rho<...>.txt is NMAP ×3 array of points along the computed MAP.Thisprogramissetupfor1<ρ<13orρ=15,orρ=20. Ifyouneed to shoot MAPs for other values of ρ, provide terminal points for the MAPs as it is done in lines 611–625. To run ShootMAPs.c, type in the terminal window:
+The output file MAP_rho<...>.txt is NMAP×3 array of points along the computed MAP.This program is setup for 1 < ρ < 13 or ρ=15,or ρ=20. If you need to shoot MAPs for other values of ρ, provide terminal points for the MAPs as it is done in lines 611–625. To run ShootMAPs.c, type in the terminal window:
 
   gcc -Wall LinLorenz.c ShootMAPs.c -lm -O3
 
@@ -66,7 +67,7 @@ handle = StrangeAttractorMesh();
 
 if you would like to output a handle for the plotted objects.
 
-(5) olim3Dvisualize.m visualizes level sets of the quasipotential in 3D. It requires two input files, parameters_rho<...>.txt and LorenzQpot_rho<...>.txt produced by olim3Dlorenz63.c. If 0 < ρ < 1, it calls gmam_lorenz.m to find a collection of MAPs. gmam_lorenz.m implements the geometric minimum action method (GMAM) [4]. If ρ0 ≈ 13.926 < ρ < ρ2 ≈ 24.74, it calls find_saddle_cycle.m to find the saddle cycles. olim3Dvisualize.m outputs handle, a handle for plotted objects for the case if you would like to make a movie using make_movie.m.
+(5) olim3Dvisualize.m visualizes level sets of the quasipotential in 3D. It requires two input files, parameters_rho<...>.txt and LorenzQpot_rho<...>.txt produced by olim3Dlorenz63.c. If 0 < ρ < 1, it calls gmam_lorenz.m to find a collection of MAPs. gmam_lorenz.m implements the geometric minimum action method (GMAM) [4]. If ρ_0 ≈ 13.926 < ρ < ρ_2 ≈ 24.74, it calls find_saddle_cycle.m to find the saddle cycles. olim3Dvisualize.m outputs handle, a handle for plotted objects for the case if you would like to make a movie using make_movie.m.
 
 (6) find_saddle_cycle.m finds saddle cycles. Call it as
 

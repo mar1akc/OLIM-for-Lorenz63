@@ -101,6 +101,6 @@ References
 
 [4] M. Heymann, E. Vanden-Eijnden, Pathways of maximum likelihood for rare events in non-equilibrium systems, application to nucleation in the presence of shear, Phys. Rev. Lett. 100, 14, 140601 (2007)
 
-[5] S. Yang, S. Potter, and M. Cameron, Computing the quasipotential for non-gradient SDEs in 3D, submitted to Journal of Computational Physics, 379 (2019) 325-350, arXiv:1808.00562
+[5] S. Yang, S. Potter, and M. Cameron, Computing the quasipotential for non-gradient SDEs in 3D, Journal of Computational Physics, 379 (2019) 325-350, arXiv:1808.00562
 
 

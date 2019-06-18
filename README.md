@@ -97,7 +97,7 @@ References
 
 [2] M. Cameron, Construction of the quasi-potential for linear SDEs using false quasi-potentials and a geometric recursion, arXiv:1801.00327
 
-[3] M. Cameron and S. Yang, Computing the quasipotential for highly dissipative and chaotic SDEs. An application to stochastic Lorenz'63, submitted, arXiv:
+[3] M. Cameron and S. Yang, Computing the quasipotential for highly dissipative and chaotic SDEs. An application to stochastic Lorenz'63, resubmitted, arXiv:1809.09987v2
 
 [4] M. Heymann, E. Vanden-Eijnden, Pathways of maximum likelihood for rare events in non-equilibrium systems, application to nucleation in the presence of shear, Phys. Rev. Lett. 100, 14, 140601 (2007)
 
